@@ -5,25 +5,31 @@
 }
 
 :root {
-    --cor-titulo:#70A100;
+    --cor-titulo:#02AB02;
+    --cor-tituloDois: #02A602;
+    --cor-backgroundDois: #f6f6f6;
     --cor-branco:#ffffff;
     --cor-paragrafo:#5e5e5e;
+    --cor-paragrafoDois:#575757;
     --fonte-principal: "Abril Fatface", Georgia, serif;
     --fonte-botao: "Droid Sans", arial, sans-serif;
-}
-
-h2 {
-    color: var(--cor-titulo);
 }
 
 .cabecalho {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #161616;
+    background-color: #0e0e0e;
     color: var(--cor-branco);
     font-family: var(--fonte-principal);
     height: 60vh;
+}
+
+.titulo {
+    font-family: var(--fonte-principal);
+    font-size: 40px;
+    font-weight: 600;
+    justify-content: center;
 }
 
 .cabecalho img {
@@ -36,19 +42,21 @@ h2 {
     font-size: 20px;
 }
 
-.botaoPrincipal {
-    background-color: #161616;
-    padding: 10px 32px;
-    margin-top: 20px;
-    border: solid 1px #97D800;
-    
+.botaoPrincipal  {
+    display: inline-block;
+    border:#03f804 solid 1px;
+    color: #03f804;
+    padding: 8px 32px;
+    margin-top: 15px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: var(--fonte-botao);
 }
 
-.botaoPrincipal a {
-    text-decoration: none;
-    color: #97D800;
-    font-family: var(--fonte-botao);
-    font-weight: 600;
+.botaoPrincipal:hover {
+    background-color: #03f804;
+    color: #0e0e0e;
+    transition: 0.3s;
 }
 
 .sobre {
@@ -64,21 +72,25 @@ h2 {
     text-align: center;
 }
 
-.sobre img {
-    border-radius: 50%;
+.imagem {
     width: 250px;
     height: 250px;
 }
 
 .sobrePrincipal {
-    margin: 5rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 0px 24px;
+    padding: 0 0 24px;
+    margin: 0 0 40px;
+}
+
+.principal {
+    margin-top: 5rem;
 }
 
 .sobrePrincipal h2 {
+    color: var(--cor-titulo);
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -105,4 +117,43 @@ h2 {
 
 .lista {
     text-align: left;
+}
+
+.inspecaoAmbiente {
+    padding: 80px 0px;
+    background-color: var(--cor-backgroundDois);
+}
+
+.inspecaoAmbiente h2 {
+    color: var(--cor-tituloDois);
+}
+
+.corpo {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-family: var(--fonte-botao);
+}
+
+.corpo ul {
+    padding: 0 24px;
+    color: var(--cor-paragrafoDois);
+}
+
+.corpo img {
+    padding: 0 24px;
+    width: 300px;
+}
+
+.manutencao {
+    padding: 80px 0px;
+}
+
+.manutencao h2 {
+    color: var(--cor-titulo);
+}
+
+.contato {
+    background-color: var(--cor-backgroundDois);
+    padding: 80px;
 }
