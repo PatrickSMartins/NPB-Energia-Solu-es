@@ -7,6 +7,8 @@
 :root {
     --cor-titulo:#02AB02;
     --cor-tituloDois: #02A602;
+    --cor-botaoEmail: #018202;
+    --cor-botaoWpp: #455a64;
     --cor-backgroundDois: #f6f6f6;
     --cor-branco:#ffffff;
     --cor-paragrafo:#5e5e5e;
@@ -14,6 +16,10 @@
     --fonte-principal: "Abril Fatface", Georgia, serif;
     --fonte-botao: "Droid Sans", arial, sans-serif;
 }
+
+@media screen and (min-width:1024px) {
+    
+
 
 .cabecalho {
     display: flex;
@@ -156,4 +162,81 @@
 .contato {
     background-color: var(--cor-backgroundDois);
     padding: 80px;
+}
+
+.contato h2 {
+    color: var(--cor-tituloDois);
+}
+
+.contatoTexto {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fonte-botao);
+}
+
+.contatoTexto h3 {
+    color: #151515;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin: 0 0 1rem 30rem;
+}
+
+.contatoTexto p {
+    color: var(--cor-paragrafoDois);
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    margin: 1rem 0 1rem 18rem
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    font-family: var(--fonte-botao);
+    font-weight: 400;
+}
+
+.botoes:hover {
+    transition: 0.3s;
+}
+
+.botoes a {
+    border: solid 1px;
+    margin: 1rem;
+    padding: 5px 15px;
+    text-decoration: none;
+}
+
+.botoes .email {
+    border-color: var(--cor-botaoEmail);
+    color: var(--cor-botaoEmail);
+}
+
+.botoes .wpp {
+    border-color: var(--cor-botaoWpp);
+    background-color: var(--cor-botaoWpp);
+    color: var(--cor-branco);
+}
+
+.wpp:hover {
+    opacity: 0.7;
+}
+
+.email:hover {
+    opacity: 0.7;
+}
+
+i {
+    padding: 0 0.5rem 0 0;
+}
+
+.rodape {
+    display: flex;
+    padding: 2rem 0;
+    background-color: #0e0e0e;
+    color: var(--cor-branco);
+    justify-content: center;
+}
+
 }
