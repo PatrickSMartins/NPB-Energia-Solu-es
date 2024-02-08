@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-titulo:#02AB02;
+    --cor-tituloDois: #02A602;
+    --cor-botaoEmail: #018202;
+    --cor-botaoWpp: #455a64;
+    --cor-backgroundDois: #f6f6f6;
+    --cor-branco:#ffffff;
+    --cor-paragrafo:#5e5e5e;
+    --cor-paragrafoDois:#575757;
+    --fonte-principal: "Abril Fatface", Georgia, serif;
+    --fonte-botao: "Droid Sans", arial, sans-serif;
+}
+
+@media screen and (min-width: 1024px) {
+    .formulario {
+        background-color: var(--cor-backgroundDois);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-family: var(--fonte-principal);
+        padding: 0px 1rem;
+    }
+
+    .formularioTitulo {
+        font-size: 3rem;
+        color: var(--cor-tituloDois);
+        margin-bottom: 2rem;
+        text-align: center;
+        line-height: 1.2;
+    }
+
+    .form {
+        width: 100%;
+        max-width: 32rem;
+        font-size: 1.125rem ;
+    }
+
+    .form label,
+    .form input,
+    .form textarea, 
+    .form button {
+        display: block;
+        width: 100%;
+    }
+
+    .form label {
+        color: var(--cor-tituloDois);
+        line-height: 1;
+        margin-bottom: 0.5rem;
+    }
+
+    .form input,
+    .form textarea {
+        font: inherit;
+        padding: 0.8rem;
+        margin-bottom: 1rem;
+        border: 1px solid transparent;
+        border-radius: 8px;
+        transition: border-color;
+    }
+
+    .form textarea {
+        min-height: 10rem;
+        resize: vertical;
+    }
+
+    .form input:hover,
+    .form input:focus,
+    .form textarea:hover,
+    .form textarea:focus {
+        outline: none;
+        border-color: var(--cor-titulo);
+    }
+
+    .form button {
+        display: block;
+        padding: 1rem;
+        background: var(--cor-titulo);
+        color: #000000;
+        font-weight: 600;
+        font-size: 1rem;
+        border: 1px solid var(--cor-botaoEmail);
+        border-radius: 8px;
+        text-transform: uppercase;
+    }
+
+    .form button:hover {
+        background: #2dcc2d;
+        color: #1e2224;
+        transition: 0.3s;
+    }
+
+    .botaoHome {
+        text-decoration: none;
+        padding: 10px 32px;
+        border: 1px solid var(--cor-titulo);
+        border-radius: 8px;
+        color: #1e2224;
+        background-color: var(--cor-titulo);
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    .botaoHome:hover {
+        opacity: 0.7;
+        transition: 0.3s;
+    }
+}
